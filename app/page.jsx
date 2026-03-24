@@ -1,6 +1,7 @@
 import Image from "next/image";
 import NavBar from '../components/NavBar';
 import ProjectCard from '../components/ProjectCard';
+
 import './globals.css';
 
 export default function Home() {

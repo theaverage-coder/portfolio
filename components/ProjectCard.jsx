@@ -1,5 +1,5 @@
-import FeaturesScroll from '../components/FeaturesScroll';
-
+import FeaturesScroll from './FeaturesScroll';
+import DatabaseDiagram from './DatabaseDiagram';
 
 export default function ProjectCard({ title, description, tech, features, screenshots, live, github, challenges }) {
     return (
@@ -13,6 +13,7 @@ export default function ProjectCard({ title, description, tech, features, screen
             </ul>
             <FeaturesScroll items={screenshots} />
             <p className="mb-2"><strong>Database Design</strong></p>
+            <DatabaseDiagram />
             {challenges && <p className="mb-2"><strong>Challenge & Solution:</strong> {challenges}</p>}
             <div className="space-x-4">
                 {live && <a href={live} target="_blank" className="text-blue-500">Live Demo</a>}
