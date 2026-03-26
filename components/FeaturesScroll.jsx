@@ -17,7 +17,7 @@ export default function FeaturesScroll({ items }) {
     };
 
     return (
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center my-20">
             <div className="relative max-w-4xl justify-center items-center ">
                 <button
                     onClick={() => scroll("left")}
