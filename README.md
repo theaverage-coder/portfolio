@@ -1,4 +1,5 @@
 # My Portfolio
+A static page to showcase my projects. 
 
 ## Tech Stack
 - Next.js
@@ -9,4 +10,4 @@
 - Responsive design
 
 ## Live Demo
-https://your-site.vercel.app
+https://portfolio-five-smoky-woygcbnzgh.vercel.app/
