@@ -21,24 +21,24 @@ export default function FeaturesScroll({ items }) {
             <div className="relative max-w-4xl justify-center items-center ">
                 <button
                     onClick={() => scroll("left")}
-                    className="absolute left-[-5vw] top-1/2 -translate-y-1/2 z-10  shadow p-2 rounded-full"
+                    className="absolute left-[-5vw] top-1/2 -translate-y-1/2 z-10  shadow p-2 rounded-full hidden md:block"
                 >
                     <IoIosArrowBack />
                 </button>
                 <button
                     onClick={() => scroll("right")}
-                    className="absolute right-[-5vw] top-1/2 -translate-y-1/2 z-10  shadow p-2 rounded-full"
+                    className="absolute right-[-5vw] top-1/2 -translate-y-1/2 z-10  shadow p-2 rounded-full hidden md:block"
                 >
                     <IoIosArrowForward />
 
                 </button>
-                <div ref={scrollRef} className="flex snap-x snap-mandatory overflow-x-auto scroll-smooth md:no-scrollbar ">
+                <div ref={scrollRef} className="flex snap-x snap-mandatory overflow-x-auto scroll-smooth md:no-scrollbar">
                     {items.map((item, i) => (
                         <div key={i} className="w-full flex-shrink-0 snap-start ">
-                            <div className="shadow rounded sm:p-2 flex-row flex justify-between items-center">
+                            <div className="shadow rounded sm:p-2 flex-row flex justify-between items-center  ">
                                 {item.images.map((img, j) => (
                                     <div key={j} >
-                                        <img src={img} className="w-55 sm:w-48" />
+                                        <img src={img} className="w-27 sm:w-48" />
                                     </div>
                                 ))}
                             </div>
