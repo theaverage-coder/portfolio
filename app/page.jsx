@@ -84,26 +84,26 @@ export default function Home() {
   return (
     <div className="flex flex-col flex-1 bg-zinc-50 font-sans bg-[#22223B]">
       <NavBar />
-      <main className="flex flex-1 w-full  flex-col items-center justify-center py-32 px-16  bg-[#22223B]">
-        <header className="text-center p-20 ">
-          <h1 className="text-4xl font-bold mb-4">Hi, I’m <span className="text-[#9A8C98]">Eesha Patel</span></h1>
-          <p className="text-xl"> I'm a Computer Science graduate and this is my collection of projects highlighting my development process.</p>
+      <main className="flex flex-1 w-full  flex-col items-center justify-center py-12  bg-[#22223B]">
+        <header className="text-center p-20  sm:py-16 md:py-20">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight">Hi, I’m <span className="text-[#9A8C98]">Eesha Patel</span></h1>
+          <p className="sm:text-lg md:text-xl max-w-2xl"> I'm a Computer Science graduate and this is a visual collection of my projects highlighting my development process.</p>
         </header>
-        <section id="projects" className="p-12 max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">Projects</h2>
+        <section id="projects" className="max-w-5xl  ">
+          <h2 className="text-3xl font-bold mb-6 text-center sm:text-left">Projects</h2>
           {projects.map((p, i) => <ProjectCard key={i} project={p} />)}
         </section>
 
-        <section id="skills" className="p-12 max-w-4xl mx-auto">
+        <section id="skills" className="p-12 mx-auto flex flex-col justify-center items-center ">
           <h2 className="text-3xl font-bold mb-6">Skills</h2>
           <ul className="list-disc list-inside">
-            <li>JavaScript, Python, Java</li>
-            <li>React, React Native, Next.js, HTML, CSS</li>
-            <li>Node.js, Express, MongoDB. MySQL</li>
+            <li >JavaScript, Python, Java</li>
+            <li >React, React Native, Next.js, HTML, CSS</li>
+            <li >Node.js, Express, MongoDB. MySQL</li>
           </ul>
         </section>
 
-        <section id="contact" className="p-12 max-w-4xl mx-auto">
+        <section id="contact" className="p-12 mx-auto flex flex-col justify-center items-center ">
           <h2 className="text-3xl font-bold mb-6">Contact</h2>
           <p>Email: patel.eesha6@gmail.com</p>
           <p>GitHub: <a href="https://github.com/theaverage-coder" target="_blank" className="text-blue-500">github.com/theaverage-coder</a></p>

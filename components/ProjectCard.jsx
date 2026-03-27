@@ -11,14 +11,14 @@ export default function ProjectCard({ project }) {
             <p className="mb-2"><strong>Tech:</strong> {project.tech}</p>
             {project.isFullStack ? (
                 <>
-                    <p className="mb-2"><strong>Features</strong></p>
+                    <p className="mb-2 text-[#F2E9E4]"><strong>Features</strong></p>
                     <ul className="list-disc list-inside mb-2">
                         {project.features.map((f, i) => <li key={i}>{f}</li>)}
                     </ul>
                     <FeaturesScroll items={project.screenshots} />
 
                     <div>
-                        <p className="mb-2"><strong>Database Design</strong></p>
+                        <p className="mb-2 text-[#F2E9E4]"><strong>Database Design</strong></p>
                         <DatabaseDiagram />
                     </div>
 
@@ -29,11 +29,11 @@ export default function ProjectCard({ project }) {
                 </>
             ) : (
                 <>
-                    <p className="mb-2"><strong>Technical Details</strong></p>
+                    <p className="mb-2 text-[#F2E9E4]"><strong>Technical Details</strong></p>
                     <ul className="list-disc list-inside mb-2">
                         {project.features.map((f, i) => <li key={i}>{f}</li>)}
                     </ul>
-                    <p className="mb-2"><strong>Results</strong></p>
+                    <p className="mb-2 text-[#F2E9E4]"><strong>Results</strong></p>
                     <ul className="list-disc list-inside mb-2">
                         {project.results.map((r, i) => <li key={i}>{r}</li>)}
                     </ul>

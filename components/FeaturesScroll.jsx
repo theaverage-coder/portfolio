@@ -32,13 +32,13 @@ export default function FeaturesScroll({ items }) {
                     <IoIosArrowForward />
 
                 </button>
-                <div ref={scrollRef} className="flex snap-x snap-mandatory overflow-x-auto scroll-smooth no-scrollbar ">
+                <div ref={scrollRef} className="flex snap-x snap-mandatory overflow-x-auto scroll-smooth md:no-scrollbar ">
                     {items.map((item, i) => (
                         <div key={i} className="w-full flex-shrink-0 snap-start ">
-                            <div className="shadow rounded p-2 flex-row flex justify-between items-center">
+                            <div className="shadow rounded sm:p-2 flex-row flex justify-between items-center">
                                 {item.images.map((img, j) => (
                                     <div key={j} >
-                                        <img src={img} className="w-48" />
+                                        <img src={img} className="w-55 sm:w-48" />
                                     </div>
                                 ))}
                             </div>
