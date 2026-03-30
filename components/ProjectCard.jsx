@@ -23,7 +23,6 @@ export default function ProjectCard({ project }) {
                     </div>
 
                     <div className="space-x-4 mt-10">
-                        <a href={project.live} target="_blank" className="text-blue-500">Live Demo</a>
                         <a href={project.github} target="_blank" className="text-blue-500">GitHub</a>
                     </div>
                 </>

@@ -36,8 +36,7 @@ export default function Home() {
           images: ["/poll.png", "/poll_vote.png", "/event.png"]
         }
       ],
-      live: "https://your-app.vercel.app",
-      github: "https://github.com/your-repo",
+      github: "https://github.com/theaverage-coder/slotly.git",
       isFullStack: true
     },
     {
