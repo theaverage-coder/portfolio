@@ -40,21 +40,34 @@ export default function Home() {
       isFullStack: true
     },
     {
+      title: "Email Queue System",
+      description: "A backend system that processes background jobs using a queue-based architecture to improve API responsiveness by decoupling task execution from user requests",
+      tech: "JavaScript, Redis, Docker",
+      features: [
+        "Implements an asynchronous notification system using a producer-consumer architecture to offload time-consuming tasks to background workers",
+        "Processes jobs with retry logic, exponential backoff, and concurrency control to improve reliability under failure conditions",
+        "Uses Redis-backed queues for fast, in-memory job scheduling a",
+        "Supports delayed job execution and fault simulation to demonstrate resilience and real-world failure handling",
+        "Containerized with Docker and designed for horizontal scalability by adding multiple worker instances",
+        "Includes a monitoring dashboard for real-time visibility into job states"
+      ]
+    },
+    {
       title: "MLP for Image Classification",
       description: "Designed a multilayer perceptron (MLP) and trained it on the Kuzushiji-MNIST dataset for image classification.",
       tech: "Python",
       features: [
-        "Classified 28×28 images of 10 Japanese cursive characters using a multilayer perceptron.",
-        "Compared performance with linear regression, logistic regression, and multiclass classifiers.",
-        "Tuned MLP parameters: hidden layers/units, learning rates, and activation functions (ReLU, Leaky-ReLU, sigmoid).",
-        "Explored how model architecture and hyperparameters impact classification performance VS CNN."
+        "Classified 28×28 images of 10 Japanese cursive characters using a multilayer perceptron",
+        "Compared performance with linear regression, logistic regression, and multiclass classifiers",
+        "Tuned MLP parameters: hidden layers/units, learning rates, and activation functions (ReLU, Leaky-ReLU, sigmoid)",
+        "Explored how model architecture and hyperparameters impact classification performance VS CNN"
       ],
       results: [
-        "Increasing hidden units improved performance, with 256 units per layer performing best.",
-        "A two-layer MLP achieved the highest accuracy (87.99%), while models without hidden layers performed significantly worse (69.41%).",
-        "ReLU and Leaky ReLU outperformed sigmoid, making them more effective for this task.",
-        "L2 regularization improved generalization and overall accuracy.",
-        "The best CNN model outperformed the MLP by 5.17%, highlighting its advantage for image classification."
+        "Increasing hidden units improved performance, with 256 units per layer performing best",
+        "A two-layer MLP achieved the highest accuracy (87.99%), while models without hidden layers performed significantly worse (69.41%)",
+        "ReLU and Leaky ReLU outperformed sigmoid, making them more effective for this task",
+        "L2 regularization improved generalization and overall accuracy",
+        "The best CNN model outperformed the MLP by 5.17%, highlighting its advantage for image classification"
       ],
       takeaways: [
 
@@ -65,17 +78,17 @@ export default function Home() {
       description: "Explored the performance of the BERT model on the AG News dataset for multi-class news classification.",
       tech: "Python",
       features: [
-        "AG News dataset: contains 120,000 training and 7,600 test examples of news headlines and descriptions, categorized into four topics: World, Sports, Business, and Sci/Tech.",
+        "AG News dataset: contains 120,000 training and 7,600 test examples of news headlines and descriptions, categorized into four topics: World, Sports, Business, and Sci/Tech",
         "Experimented with a transformer-based model (BERT) using PyTorch",
         "Explored attention mechanisms and contextual embeddings",
         "Evaluated performance on NLP tasks"
       ],
       results: [
-        "[CLS] token embeddings performed best among probing strategies for sentence representation.",
+        "[CLS] token embeddings performed best among probing strategies for sentence representation",
         "Logistic regression on frozen BERT embeddings achieved 89.09% accuracy.",
-        "End-to-end fine-tuning improved performance to 93.08% accuracy.",
-        "Attention visualizations showed focus on semantically relevant tokens during correct predictions.",
-        "Results demonstrate that fine-tuning significantly enhances task-specific performance."
+        "End-to-end fine-tuning improved performance to 93.08% accuracy",
+        "Attention visualizations showed focus on semantically relevant tokens during correct predictions",
+        "Results demonstrate that fine-tuning significantly enhances task-specific performance"
       ],
     }
   ]
