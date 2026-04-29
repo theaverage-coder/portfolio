@@ -50,7 +50,8 @@ export default function Home() {
         "Supports delayed job execution and fault simulation to demonstrate resilience and real-world failure handling",
         "Containerized with Docker and designed for horizontal scalability by adding multiple worker instances",
         "Includes a monitoring dashboard for real-time visibility into job states"
-      ]
+      ],
+      results: []
     },
     {
       title: "MLP for Image Classification",
