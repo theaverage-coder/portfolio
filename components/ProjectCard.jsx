@@ -32,10 +32,14 @@ export default function ProjectCard({ project }) {
                     <ul className="list-disc list-inside mb-2">
                         {project.features.map((f, i) => <li key={i}>{f}</li>)}
                     </ul>
+                    {project.pictures &&
+                        <FeaturesScroll items={project.pictures} />
+                    }
                     <p className="mb-2 text-[#F2E9E4]"><strong>Results</strong></p>
-                    <ul className="list-disc list-inside mb-2">
-                        {project.results.map((r, i) => <li key={i}>{r}</li>)}
-                    </ul>
+                    {project.results &&
+                        <ul className="list-disc list-inside mb-2">
+                            {project.results.map((r, i) => <li key={i}>{r}</li>)}
+                        </ul>}
                 </>
             )}
         </div>

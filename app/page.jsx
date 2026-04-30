@@ -51,7 +51,9 @@ export default function Home() {
         "Containerized with Docker and designed for horizontal scalability by adding multiple worker instances",
         "Includes a monitoring dashboard for real-time visibility into job states"
       ],
-      results: []
+      pictures: [
+        "/email_queue_flow.png", "/bull_board_dashboard.png"
+      ]
     },
     {
       title: "MLP for Image Classification",
