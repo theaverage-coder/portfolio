@@ -53,8 +53,12 @@ export default function Home() {
       ],
       pictures: [
         {
-          caption: "Flow of system and Bull Board dashboard",
-          images: ["/email_queue_flow.png", "/bull_board_dashboard.png"]
+          caption: "System flow",
+          images: ["/email_queue_flow.png"]
+        },
+        {
+          caption: "Bull Board dashboard to monitor jobs",
+          images: ["/bull_board_dashboard.png"]
         },
       ]
     },
