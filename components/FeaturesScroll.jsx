@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
-export default function FeaturesScroll({ items }) {
+export default function FeaturesScroll({ items, defaultWidth, smWidth }) {
     const scrollRef = useRef();
 
     const scroll = (dir) => {
@@ -38,7 +38,7 @@ export default function FeaturesScroll({ items }) {
                             <div className="shadow rounded sm:p-2 flex-row flex justify-between items-center  ">
                                 {item.images.map((img, j) => (
                                     <div key={j} >
-                                        <img src={img} className="w-27 sm:w-48" />
+                                        <img src={img} className={`w-${defaultWidth} sm:w-${smWidth}`} />
                                     </div>
                                 ))}
                             </div>
