@@ -52,7 +52,10 @@ export default function Home() {
         "Includes a monitoring dashboard for real-time visibility into job states"
       ],
       pictures: [
-        "/email_queue_flow.png", "/bull_board_dashboard.png"
+        {
+          caption: "Flow of system and Bull Board dashboard",
+          images: ["/email_queue_flow.png", "/bull_board_dashboard.png"]
+        },
       ]
     },
     {
