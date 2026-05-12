@@ -60,7 +60,8 @@ export default function Home() {
           caption: "Bull Board dashboard to monitor jobs",
           images: ["/bull_board_dashboard.png"]
         },
-      ]
+      ],
+      github: "https://github.com/theaverage-coder/Email-Queue"
     },
     {
       title: "MLP for Image Classification",
@@ -72,16 +73,22 @@ export default function Home() {
         "Tuned MLP parameters: hidden layers/units, learning rates, and activation functions (ReLU, Leaky-ReLU, sigmoid)",
         "Explored how model architecture and hyperparameters impact classification performance VS CNN"
       ],
+      pictures: [
+        {
+          caption: "Results of trying different hidden units within layers, learning rates and activation functions",
+          images: ["/MLP_hidden_units_and_lr_vs_accuracy.png", "/MLP_activation_functions.PNG"]
+        },
+        {
+          caption: "The 256-unit, 0.01 learning rate model was the best-performing two-hidden-layer MLP (93.54% test accuracy). Outperformed by 32-unit ConvNet model (93.54% test accuracy)",
+          images: ["/MLP_optimal_model.png", "/MLP_convnet_results.png"]
+        },
+      ],
       results: [
-        "Increasing hidden units improved performance, with 256 units per layer performing best",
-        "A two-layer MLP achieved the highest accuracy (87.99%), while models without hidden layers performed significantly worse (69.41%)",
+        "Increasing hidden units improved performance, with a 256 unit, 2-layer MLP achieving optimal performance",
         "ReLU and Leaky ReLU outperformed sigmoid, making them more effective for this task",
         "L2 regularization improved generalization and overall accuracy",
-        "The best CNN model outperformed the MLP by 5.17%, highlighting its advantage for image classification"
+        "The best CNN model outperformed the optmal MLP, highlighting its advantage for image classification"
       ],
-      takeaways: [
-
-      ]
     },
     {
       title: "LLM for Text Classification",
