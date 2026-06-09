@@ -129,8 +129,8 @@ export default function Home() {
       <NavBar />
       <main className="flex flex-1 w-full  flex-col items-center justify-center py-12  bg-[#22223B]">
         <header className="text-center p-20  sm:py-16 md:py-20">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight">Hi, I’m <span className="text-[#9A8C98]">Eesha Patel</span></h1>
-          <p className="sm:text-lg md:text-xl max-w-2xl"> I'm a Computer Science graduate and this is a visual collection of my projects highlighting my development process.</p>
+          <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mb-4 leading-tight">Hi, I’m <span className="text-[#9A8C98]">Eesha Patel</span></h1>
+          <p className="sm:text-lg md:text-2xl max-w-2xl"> I'm a Computer Science graduate and this is a visual collection of my projects highlighting my development process.</p>
         </header>
         <section id="projects" className="max-w-5xl  ">
           <h2 className="text-3xl font-bold mb-6 text-center sm:text-left">Projects</h2>
@@ -139,7 +139,7 @@ export default function Home() {
 
         <section id="skills" className="p-12 mx-auto flex flex-col justify-center items-center ">
           <h2 className="text-3xl font-bold mb-6">Skills</h2>
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-inside md:text-xl">
             <li >JavaScript, Python, Java</li>
             <li >React, React Native, Next.js, HTML, CSS</li>
             <li >Node.js, Express, MongoDB. MySQL</li>
@@ -148,9 +148,9 @@ export default function Home() {
 
         <section id="contact" className="p-12 mx-auto flex flex-col justify-center items-center ">
           <h2 className="text-3xl font-bold mb-6">Contact</h2>
-          <p>Email: patel.eesha6@gmail.com</p>
-          <p>GitHub: <a href="https://github.com/theaverage-coder" target="_blank" className="text-blue-500">github.com/theaverage-coder</a></p>
-          <p>LinkedIn: <a href="https://linkedin.com/in/eesha-patel-728837387" target="_blank" className="text-blue-500">linkedin.com/in/eesha-patel</a></p>
+          <p className="md:text-xl">Email: patel.eesha6@gmail.com</p>
+          <p className="md:text-xl">GitHub: <a href="https://github.com/theaverage-coder" target="_blank" className="text-blue-500">github.com/theaverage-coder</a></p>
+          <p className="md:text-xl">LinkedIn: <a href="https://linkedin.com/in/eesha-patel-728837387" target="_blank" className="text-blue-500">linkedin.com/in/eesha-patel</a></p>
         </section>
       </main>
     </div>

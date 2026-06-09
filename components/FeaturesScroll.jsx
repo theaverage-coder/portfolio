@@ -38,7 +38,7 @@ export default function FeaturesScroll({ items, defaultWidth }) {
                             <div className="shadow rounded sm:p-2 flex-row flex justify-between items-center  ">
                                 {item.images.map((img, j) => (
                                     <div key={j} >
-                                        <img src={img} style={{ width: `${defaultWidth}px` }} />
+                                        <img src={img} style={{ width: defaultWidth && `${defaultWidth}px` }} />
                                     </div>
                                 ))}
                             </div>
