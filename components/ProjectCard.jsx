@@ -15,7 +15,7 @@ export default function ProjectCard({ project }) {
                     <ul className="list-disc list-inside mb-2">
                         {project.features.map((f, i) => <li key={i}>{f}</li>)}
                     </ul>
-                    <FeaturesScroll items={project.screenshots} defaultWidth={24} smWidth={28} />
+                    <FeaturesScroll items={project.screenshots} defaultWidth={240} />
 
                     <div>
                         <p className="mb-2 text-[#F2E9E4]"><strong>Database Design</strong></p>
@@ -33,13 +33,17 @@ export default function ProjectCard({ project }) {
                         {project.features.map((f, i) => <li key={i}>{f}</li>)}
                     </ul>
                     {project.pictures &&
-                        <FeaturesScroll items={project.pictures} defaultWidth={28} smWidth={80} />
+                        <FeaturesScroll items={project.pictures} />
                     }
-                    <p className="mb-2 text-[#F2E9E4]"><strong>Results</strong></p>
+
                     {project.results &&
-                        <ul className="list-disc list-inside mb-2">
-                            {project.results.map((r, i) => <li key={i}>{r}</li>)}
-                        </ul>}
+                        <>
+                            <p className="mb-2 text-[#F2E9E4]"><strong>Results</strong></p>
+                            <ul className="list-disc list-inside mb-2">
+                                {project.results.map((r, i) => <li key={i}>{r}</li>)}
+                            </ul>
+                        </>
+                    }
                 </>
             )}
         </div>

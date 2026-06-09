@@ -9,7 +9,7 @@ export default function Home() {
     {
       title: "Slotly",
       description: "A mobile booking app that allows students and professors to schedule, manage, and track appointments.",
-      tech: "MERN Stack [React Native, Node.js, Express, MongoDB]",
+      tech: "React Native, Node.js, Express, MongoDB",
       features: [
         "Secure authentication system with JWT and role-based access (students vs. professors)",
         "Integrated course enrollment system for managing academic participation",
@@ -40,6 +40,20 @@ export default function Home() {
       isFullStack: true
     },
     {
+      title: "URL Shortener",
+      description: "Full-stack URL shortening platform with user accounts, custom aliases, and real-time analytics",
+      tech: "MERN stack",
+      features: [
+        "Secure authentication system using JWT and protected routes for user-specific link management",
+        "Analytics dashboard displaying click counts, unique visitors, and traffic trends powered by MongoDB aggregation pipelines",
+        "Built with React, Node.js, Express, and MongoDB following a modular, scalable architecture"
+      ],
+      pitures: [
+
+      ],
+      github: "https://github.com/theaverage-coder/url-shortener"
+    },
+    {
       title: "Email Queue System",
       description: "A backend system that processes background jobs using a queue-based architecture to improve API responsiveness by decoupling task execution from user requests",
       tech: "JavaScript, Redis, Docker",
@@ -61,7 +75,7 @@ export default function Home() {
           images: ["/bull_board_dashboard.png"]
         },
       ],
-      github: "https://github.com/theaverage-coder/Email-Queue"
+      github: "https://github.com/theaverage-coder/email-queue"
     },
     {
       title: "MLP for Image Classification",
@@ -76,7 +90,7 @@ export default function Home() {
       pictures: [
         {
           caption: "Results of trying different hidden units within layers, learning rates and activation functions",
-          images: ["/MLP_hidden_units_and_lr_vs_accuracy.png", "/MLP_activation_functions.PNG"]
+          images: ["/MLP_hidden_units_and_lr_vs_accuracy.png", "/MLP_activation_functions.png"]
         },
         {
           caption: "The 256-unit, 0.01 learning rate model was the best-performing two-hidden-layer MLP (93.54% test accuracy). Outperformed by 32-unit ConvNet model (93.54% test accuracy)",
