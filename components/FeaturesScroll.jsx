@@ -31,7 +31,10 @@ export default function FeaturesScroll({ items, mobilePicture }) {
 
                         bg-white/5 border border-white/10 text-white
                         rounded-full md:rounded-lg
-                        backdrop-blur-sm hover:bg-white/10"
+                        backdrop-blur-sm hover:bg-white/10
+                        
+                        hover:cursor-pointer
+                        "
                 >
                     <IoIosArrowBack
                         className="     
@@ -53,6 +56,8 @@ export default function FeaturesScroll({ items, mobilePicture }) {
                         bg-white/5 border border-white/10 text-white
                         rounded-full md:rounded-lg
                         backdrop-blur-sm hover:bg-white/10
+
+                        hover:cursor-pointer
                     "
                 >
                     <IoIosArrowForward
