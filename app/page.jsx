@@ -1,15 +1,61 @@
 import Image from "next/image";
 import NavBar from '../components/NavBar';
 import ProjectCard from '../components/ProjectCard';
-
+import SkillCard from '../components/SkillCard';
+import ContactCard from '../components/ContactCard';
 import './globals.css';
 
 export default function Home() {
+  const skills = [
+    {
+      title: "LANGUAGES",
+      items: ["JavaScript", "Java", "Python"]
+    },
+    {
+      title: "TECHNOLOGIES & LIBRARIES",
+      items: ["React.js", "React Native", "Node.js"]
+    },
+    {
+      title: "DATABASES & STORAGE",
+      items: ["MySQL", "MongoDB", "Redis"]
+    },
+    {
+      title: "TOOLS & TECHNOLOGIES",
+      items: ["HTML", "CSS", "Git", "Docker"]
+    }
+  ];
+
+  const contact = [
+    {
+      title: "EMAIL",
+      text: "patel.eesha6@gmail.com"
+    },
+    {
+      title: "PHONE",
+      text: "514-884-7012"
+    },
+    {
+      title: "GITHUB",
+      text: "github.com/theaverage-coder",
+      link: "https://github.com/theaverage-coder"
+    },
+    {
+      title: "LINKEDIN",
+      text: "Eesha Patel",
+      link: "https://linkedin.com/in/eesha-patel-728837387"
+    },
+  ];
+
   const projects = [
     {
       title: "Slotly",
       description: "A mobile booking app that allows students and professors to schedule, manage, and track appointments.",
-      tech: "React Native, Node.js, Express, MongoDB",
+      tech: [
+        "React Native",
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
       features: [
         "Secure authentication system with JWT and role-based access (students vs. professors)",
         "Integrated course enrollment system for managing academic participation",
@@ -42,7 +88,9 @@ export default function Home() {
     {
       title: "URL Shortener",
       description: "Full-stack URL shortening platform with user accounts, custom aliases, and real-time analytics",
-      tech: "MERN stack",
+      tech: [
+        "MERN stack"
+      ],
       features: [
         "Secure authentication system using JWT and protected routes for user-specific link management",
         "Analytics dashboard displaying click counts, unique visitors, and traffic trends powered by MongoDB aggregation pipelines",
@@ -56,7 +104,11 @@ export default function Home() {
     {
       title: "Email Queue System",
       description: "A backend system that processes background jobs using a queue-based architecture to improve API responsiveness by decoupling task execution from user requests",
-      tech: "JavaScript, Redis, Docker",
+      tech: [
+        "JavaScript",
+        "Redis",
+        "Docker"
+      ],
       features: [
         "Implements an asynchronous notification system using a producer-consumer architecture to offload time-consuming tasks to background workers",
         "Processes jobs with retry logic, exponential backoff, and concurrency control to improve reliability under failure conditions",
@@ -80,7 +132,9 @@ export default function Home() {
     {
       title: "MLP for Image Classification",
       description: "Designed a multilayer perceptron (MLP) and trained it on the Kuzushiji-MNIST dataset for image classification.",
-      tech: "Python",
+      tech: [
+        "Python"
+      ],
       features: [
         "Classified 28×28 images of 10 Japanese cursive characters using a multilayer perceptron",
         "Compared performance with linear regression, logistic regression, and multiclass classifiers",
@@ -107,7 +161,10 @@ export default function Home() {
     {
       title: "LLM for Text Classification",
       description: "Explored the performance of the BERT model on the AG News dataset for multi-class news classification.",
-      tech: "Python",
+      tech: [
+        "Python",
+        "Pytorch"
+      ],
       features: [
         "AG News dataset: contains 120,000 training and 7,600 test examples of news headlines and descriptions, categorized into four topics: World, Sports, Business, and Sci/Tech",
         "Experimented with a transformer-based model (BERT) using PyTorch",
@@ -128,31 +185,75 @@ export default function Home() {
     <div className="flex flex-col flex-1 bg-zinc-50 font-sans bg-[#22223B]">
       <NavBar />
       <main className="flex flex-1 w-full  flex-col items-center justify-center py-12  bg-[#22223B]">
-        <header className="text-center p-20  sm:py-16 md:py-20">
-          <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mb-4 leading-tight">Hi, I’m <span className="text-[#9A8C98]">Eesha Patel</span></h1>
-          <p className="sm:text-lg md:text-2xl max-w-2xl"> I'm a Computer Science graduate and this is a visual collection of my projects highlighting my development process.</p>
+        <header className="flex flex-col text-center p-20  sm:py-16 md:py-20 md:h-[550px] justify-center items-center">
+          <h2 className="mb-10 uppercase font-light tracking-[0.2em] text-[#C9ADA7]"> FULL STACK & BACKEND DEVELOPER </h2>
+          <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mb-4 leading-tight">Hi, I’m <span className="text-[#9A8C98]">Eesha.</span></h1>
+          <p className="sm:text-lg md:text-2xl max-w-2xl"> This portfolio is a collection of projects that showcase my development process, technical skills, and problem-solving approach.</p>
         </header>
-        <section id="projects" className="max-w-5xl  ">
-          <h2 className="text-3xl font-bold mb-6 text-center sm:text-left">Projects</h2>
+
+        <section id="about" className="lg:w-5xl mb-40">
+          <h2 className="md:text-2xl uppercase font-light tracking-[0.2em] mb-6 text-center  md:mx-10 lg:mx-0 md:text-left  border-b border-gray-300 pb-2">
+            ABOUT
+          </h2>
+          <div className="w-full flex justify-center items-center">
+            <div className="flex flex-row gap-x-15 w-[80%]">
+              <div className="flex flex-col gap-5">
+                <p>
+                  I'm a Computer Science graduate from Mcgill University with a passion for software development and building practical applications.
+                </p>
+                <p>
+                  Through personal, academic, and collaborative projects, I've gained experience designing and developing full-stack applications.
+                  I enjoy designing APIs, working with databases, and building scalable applications.
+                </p>
+              </div>
+              <p>
+                I am actively seeking entry-level opportunities in software development, backend engineering, or full-stack development where I can apply my technical skills, contribute to meaningful projects, and continue growing as a developer.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" className="lg:w-5xl mb-10">
+          <h2 className="md:text-2xl uppercase font-light tracking-[0.2em] mb-6 text-center md:text-left md:mx-10 lg:mx-0  border-b border-gray-300 pb-2">
+            PROJECTS
+          </h2>
           {projects.map((p, i) => <ProjectCard key={i} project={p} />)}
         </section>
 
-        <section id="skills" className="p-12 mx-auto flex flex-col justify-center items-center ">
-          <h2 className="text-3xl font-bold mb-6">Skills</h2>
-          <ul className="list-disc list-inside md:text-xl">
-            <li >JavaScript, Python, Java</li>
-            <li >React, React Native, Next.js, HTML, CSS</li>
-            <li >Node.js, Express, MongoDB. MySQL</li>
-          </ul>
+        <section id="skills" className="lg:w-5xl mb-10">
+          <h2 className="md:text-2xl uppercase font-light tracking-[0.2em] mb-6 text-center md:text-left md:mx-10 lg:mx-0   border-b border-gray-300 pb-2">
+            SKILLS
+          </h2>
+          <div className="w-full flex justify-center items-center mt-10 ">
+            <div className="w-[80%]">
+              {skills.map((e, idx) => (
+                <div key={idx}>
+                  <h5 className="  text-[#9A8C98] mb-2 uppercase font-light tracking-[0.1em]"> {e.title} </h5>
+                  <div className="flex flex-row mb-10 gap-x-4">
+                    {e.items.map((item, i) =>
+                      <SkillCard key={i} text={item} />
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
-        <section id="contact" className="p-12 mx-auto flex flex-col justify-center items-center ">
-          <h2 className="text-3xl font-bold mb-6">Contact</h2>
-          <p className="md:text-xl">Email: patel.eesha6@gmail.com</p>
-          <p className="md:text-xl">GitHub: <a href="https://github.com/theaverage-coder" target="_blank" className="text-blue-500">github.com/theaverage-coder</a></p>
-          <p className="md:text-xl">LinkedIn: <a href="https://linkedin.com/in/eesha-patel-728837387" target="_blank" className="text-blue-500">linkedin.com/in/eesha-patel</a></p>
+        <section id="contact" className="lg:w-5xl mb-10">
+          <h2 className="md:text-2xl uppercase font-light tracking-[0.2em] mb-6 text-center md:mx-10 lg:mx-0  md:text-left border-b border-gray-300 pb-2">
+            CONTACT
+          </h2>
+          <div className="w-full flex justify-center items-center mt-10">
+            <div className="w-[80%] grid grid-cols-2 gap-x-20 gap-y-5 w-fit mx-auto">
+              {contact.map((e, idx) =>
+                <ContactCard key={idx} contact={e} />
+              )}
+            </div>
+          </div>
+
         </section>
       </main>
-    </div>
+    </div >
   );
 }
