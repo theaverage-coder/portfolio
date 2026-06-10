@@ -1,10 +1,11 @@
 import FeaturesScroll from './FeaturesScroll';
 import DatabaseDiagram from './DatabaseDiagram';
+import GithubButton from './GithubButton';
 
 export default function ProjectCard({ project }) {
 
     return (
-        <div className=" p-6 rounded  mb-6 ">
+        <div className=" p-6 rounded  mb-6 mt-10 ">
             <h2 className="text-2xl font-bold uppercase tracking-[0.1em] mb-2 text-[#C9ADA7]">{project.title}</h2>
             <p className="mb-2 ">{project.description}</p>
             <div className='my-5'>
@@ -13,7 +14,7 @@ export default function ProjectCard({ project }) {
                 </p>
                 <div className="flex flex-row gap-x-5">
                     {project.tech.map((e, idx) =>
-                        <div key={idx} className="bg-white/5 border border-white/10 rounded-xl px-2 py-3 backdrop-blur-sm w-35 h-10 flex items-center justify-center">
+                        <div key={idx} className=" border border-white/10 rounded-xl px-2 py-3 backdrop-blur-sm w-35 h-10 flex items-center justify-center">
                             <span className="text-white text-base">
                                 {e}
                             </span>
@@ -68,9 +69,7 @@ export default function ProjectCard({ project }) {
             )}
             {
                 project.github &&
-                <div className="space-x-4 mt-10">
-                    <a href={project.github} target="_blank" className="text-blue-500">GitHub</a>
-                </div>
+                <GithubButton github={project.github} />
             }
         </div>
 

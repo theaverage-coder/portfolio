@@ -82,7 +82,10 @@ export default function Home() {
           images: ["/poll.png", "/poll_vote.png", "/event.png"]
         }
       ],
-      github: "https://github.com/theaverage-coder/slotly.git",
+      github: {
+        title: "slotly",
+        link: "https://github.com/theaverage-coder/slotly.git"
+      },
       isFullStack: true
     },
     {
@@ -99,7 +102,10 @@ export default function Home() {
       pitures: [
 
       ],
-      github: "https://github.com/theaverage-coder/url-shortener"
+      github: {
+        title: "url-shortener",
+        link: "https://github.com/theaverage-coder/url-shortener"
+      },
     },
     {
       title: "Email Queue System",
@@ -127,7 +133,10 @@ export default function Home() {
           images: ["/bull_board_dashboard.png"]
         },
       ],
-      github: "https://github.com/theaverage-coder/email-queue"
+      github: {
+        title: "email-queue",
+        link: "https://github.com/theaverage-coder/email-queue"
+      },
     },
     {
       title: "MLP for Image Classification",

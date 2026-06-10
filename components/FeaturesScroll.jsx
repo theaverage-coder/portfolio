@@ -17,25 +17,33 @@ export default function FeaturesScroll({ items, mobilePicture }) {
     };
 
     return (
-        <div className="flex items-center justify-center my-20">
+        <div className="flex items-center justify-center mt-20 mb-10">
             <div className="relative sm:w-[90%] lg:max-w-4xl justify-center items-center ">
                 <button
                     onClick={() => scroll("left")}
-                    className="absolute left-[-7vw] lg:left-[-5vw]
-                                top-1/2 -translate-y-1/2 z-10
+                    className="
+                        group transition-all duration-300
+                        absolute left-[-7vw] lg:left-[-5vw]
+                        top-1/2 -translate-y-1/2 z-10
 
-                                flex items-center justify-center
-                                w-10 h-10 md:w-auto md:h-auto md:px-5 md:py-3
+                        flex items-center justify-center
+                        w-10 h-10 md:w-auto md:h-auto md:px-5 md:py-3
 
-                                bg-white/5 border border-white/10 text-white
-                                rounded-full md:rounded-lg
-                                backdrop-blur-sm hover:bg-white/10"
+                        bg-white/5 border border-white/10 text-white
+                        rounded-full md:rounded-lg
+                        backdrop-blur-sm hover:bg-white/10"
                 >
-                    <IoIosArrowBack />
+                    <IoIosArrowBack
+                        className="     
+                            transition-transform duration-300
+                            group-hover:-translate-x-1
+                        "
+                    />
                 </button>
                 <button
                     onClick={() => scroll("right")}
                     className="
+                        group transition-all duration-300
                         absolute right-[-7vw] lg:right-[-5vw]
                         top-1/2 -translate-y-1/2 z-10
 
@@ -47,7 +55,11 @@ export default function FeaturesScroll({ items, mobilePicture }) {
                         backdrop-blur-sm hover:bg-white/10
                     "
                 >
-                    <IoIosArrowForward />
+                    <IoIosArrowForward
+                        className="     
+                            transition-transform duration-300
+                            group-hover:translate-x-1
+                        "/>
 
                 </button>
                 <div ref={scrollRef} className="flex snap-x snap-mandatory overflow-x-auto scroll-smooth no-scrollbar ">
