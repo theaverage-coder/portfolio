@@ -200,7 +200,7 @@ export default function Home() {
           <p className="sm:text-lg md:text-2xl max-w-2xl"> This portfolio is a collection of projects that showcase my development process, technical skills, and problem-solving approach.</p>
         </header>
 
-        <section id="about" className="lg:w-5xl mb-40">
+        <section id="about" className="lg:w-5xl mb-40  scroll-mt-24">
           <h2 className="md:text-2xl uppercase font-light tracking-[0.2em] mb-6 text-center  md:mx-10 lg:mx-0 md:text-left  border-b border-gray-300 pb-2">
             ABOUT
           </h2>
@@ -222,14 +222,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="lg:w-5xl mb-10">
+        <section id="projects" className="lg:w-5xl mb-10 scroll-mt-24">
           <h2 className="md:text-2xl uppercase font-light tracking-[0.2em] mb-6 text-center md:text-left md:mx-10 lg:mx-0  border-b border-gray-300 pb-2">
             PROJECTS
           </h2>
           {projects.map((p, i) => <ProjectCard key={i} project={p} />)}
         </section>
 
-        <section id="skills" className="lg:w-5xl mb-10">
+        <section id="skills" className="lg:w-5xl mb-10 scroll-mt-24">
           <h2 className="md:text-2xl uppercase font-light tracking-[0.2em] mb-6 text-center md:text-left md:mx-10 lg:mx-0   border-b border-gray-300 pb-2">
             SKILLS
           </h2>
@@ -249,7 +249,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="lg:w-5xl mb-10">
+        <section id="contact" className="lg:w-5xl mb-10 scroll-mt-24">
           <h2 className="md:text-2xl uppercase font-light tracking-[0.2em] mb-6 text-center md:mx-10 lg:mx-0  md:text-left border-b border-gray-300 pb-2">
             CONTACT
           </h2>

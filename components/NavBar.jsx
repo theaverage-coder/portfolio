@@ -1,6 +1,6 @@
 export default function Navbar() {
     return (
-        <nav className="flex justify-between p-6 shadow bg-[#4A4E69]">
+        <nav className="flex justify-between p-6 shadow bg-[#4A4E69] fixed w-full top-0 left-0 z-50">
             <h1 className="text-xl font-bold">Eesha Patel</h1>
             <div className="space-x-4">
                 <a href="#about"> About </a>
