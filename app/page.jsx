@@ -16,12 +16,12 @@ export default function Home() {
       items: ["React.js", "React Native", "Node.js"]
     },
     {
-      title: "DATABASES & STORAGE",
-      items: ["MySQL", "MongoDB", "Redis"]
+      title: "DATABASES",
+      items: ["MySQL", "MongoDB"]
     },
     {
       title: "TOOLS & TECHNOLOGIES",
-      items: ["HTML", "CSS", "Git", "Docker"]
+      items: ["HTML", "CSS", "Git"]
     }
   ];
 
@@ -57,11 +57,14 @@ export default function Home() {
         "MongoDB"
       ],
       features: [
-        "Secure authentication system with JWT and role-based access (students vs. professors)",
-        "Integrated course enrollment system for managing academic participation",
-        "Advanced booking system with real-time conflict prevention for scheduling appointments",
-        "Interactive polling system allowing dynamic voting and updates",
-        "Event management module for creating, managing, and registering for events"
+        "Developed a mobile application to automate office-hour scheduling, event management, and student-professor interactions",
+        "Designed and implemented RESTful APIs with JWT-based authentication and secured user credentials using password hashing and salting with bcrypt",
+        "Role-based access control: enabling professors to manage courses, office hours, events, and polls, while allowing students to book appointments, register for events, and participate in polls",
+        "Architected a scalable MongoDB database schema for users, courses, appointments, events, polls and more while enabling efficient data retrieval and management",
+        "Built reusable React Native components and integrated frontend workflows with backend services through asynchronous API communication",
+        "Developed backend services using a modular MVC architecture, improving maintainability and separation of concerns",
+        "Developed backend validation logic to prevent appointment scheduling conflicts and implemented frontend form validation and error handling for application reliability",
+        "Collaborated with a UI/UX designer and utilized Git-based workflows to deliver production-ready features in a team environment"
       ],
       screenshots: [
         {
