@@ -219,7 +219,7 @@ export default function Home() {
                 </p>
               </div>
               <p>
-                I am actively seeking entry-level opportunities in software development, backend engineering, or full-stack development where I can apply my technical skills, contribute to meaningful projects, and continue growing as a developer.
+                I am actively seeking opportunities in software development, backend engineering, or full-stack development where I can apply my technical skills, contribute to meaningful projects, and continue growing as a developer.
               </p>
             </div>
           </div>
