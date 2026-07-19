@@ -53,7 +53,7 @@ export default function Home() {
       tech: [
         "React Native",
         "Node.js",
-        "Express",
+        "Express.js",
         "MongoDB"
       ],
       features: [
@@ -66,7 +66,7 @@ export default function Home() {
         "Developed backend validation logic to prevent appointment scheduling conflicts and implemented frontend form validation and error handling for application reliability",
         "Collaborated with a UI/UX designer and utilized Git-based workflows to deliver production-ready features in a team environment"
       ],
-      screenshots: [
+      pictures: [
         {
           caption: "Secure user authentication with role-based access control (students vs. professors), using JWT-based session management.",
           images: ["/onboardingStart.png", "/login.png", "/onboardingRole.png"]
@@ -85,26 +85,25 @@ export default function Home() {
           images: ["/poll.png", "/poll_vote.png", "/event.png"]
         }
       ],
+      database: "/slotly_db.svg",
       github: {
         title: "slotly",
         link: "https://github.com/theaverage-coder/slotly.git"
       },
-      isFullStack: true
+
     },
     {
       title: "URL Shortener",
       description: "Full-stack URL shortening platform with user accounts, custom aliases, and real-time analytics",
       tech: [
-        "MERN stack"
+        "React", "Express.js", "Node.js", "PostgreSQL"
       ],
       features: [
-        "Secure authentication system using JWT and protected routes for user-specific link management",
-        "Analytics dashboard displaying click counts, unique visitors, and traffic trends powered by MongoDB aggregation pipelines",
-        "Built with React, Node.js, Express, and MongoDB following a modular, scalable architecture"
+        "Implemented JWT authentication and authorization to provide secure, user-specific URL management through protected REST APIs.",
+        "Developed an analytics system that reports click activity, unique visitors, and time-based traffic metrics using optimized SQL aggregation queries.",
+        "Refactored the backend from MongoDB to PostgreSQL with Prisma ORM, designing a normalized relational schema and indexing strategy to improve scalability and query efficiency."
       ],
-      pitures: [
-
-      ],
+      database: "/url_shortener_db.svg",
       github: {
         title: "url-shortener",
         link: "https://github.com/theaverage-coder/url-shortener"

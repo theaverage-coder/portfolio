@@ -22,53 +22,43 @@ export default function ProjectCard({ project }) {
                     )}
                 </div>
             </div>
-            {project.isFullStack ? (
-                <>
-                    <div className='my-5'>
-                        <p className="mb-2 md:text-xl font-light uppercase tracking-[0.1em] text-[#F2E9E4]">
-                            Features
-                        </p>
-                        <ul className="list-disc list-inside mb-2 ">
-                            {project.features.map((f, i) => <li key={i}>{f}</li>)}
-                        </ul>
-                        <FeaturesScroll items={project.screenshots} mobilePicture={true} />
-                    </div>
-                    <div className='my-5'>
-                        <p className="mb-2 md:text-xl font-light uppercase tracking-[0.1em] text-[#F2E9E4]">
-                            Database Design
-                        </p>
-                        <DatabaseDiagram />
-                    </div>
+            <div className='my-5'>
+                <p className="mb-2 md:text-xl font-light uppercase tracking-[0.1em] text-[#F2E9E4]">
+                    Technical Details
+                </p>
+                <ul className="list-disc list-inside mb-2 ">
+                    {project.features.map((f, i) => <li key={i}>{f}</li>)}
+                </ul>
+                {project.pictures && (
+                    project.title === "Slotly" ?
+                        <FeaturesScroll items={project.pictures} mobilePicture={true} />
+                        :
+                        <FeaturesScroll items={project.pictures} />
+                )}
+            </div>
 
-                </>
-            ) : (
-                <>
-                    <div className='my-5'>
-                        <p className="mb-2 md:text-xl font-light uppercase tracking-[0.1em] text-[#F2E9E4]">
-                            Technical Details
-                        </p>
-                        <ul className="list-disc list-inside mb-2 ">
-                            {project.features.map((f, i) => <li key={i}>{f}</li>)}
-                        </ul>
-                        {project.pictures &&
-                            <FeaturesScroll items={project.pictures} />
-                        }
-                    </div>
-                    {project.results &&
-                        <div className='my-5'>
-
-                            <p className="mb-2 md:text-xl font-light uppercase tracking-[0.1em] text-[#F2E9E4]">
-                                Results
-                            </p>
-                            <ul className="list-disc list-inside mb-2">
-                                {project.results.map((r, i) => <li key={i}>{r}</li>)}
-                            </ul>
-                        </div>
-                    }
-                </>
+            {project.database && (
+                <div className='my-5'>
+                    <p className="mb-2 md:text-xl font-light uppercase tracking-[0.1em] text-[#F2E9E4]">
+                        Database Design
+                    </p>
+                    <DatabaseDiagram database={project.database} />
+                </div>
             )}
-            {
-                project.github &&
+
+            {project.results &&
+                <div className='my-5'>
+
+                    <p className="mb-2 md:text-xl font-light uppercase tracking-[0.1em] text-[#F2E9E4]">
+                        Results
+                    </p>
+                    <ul className="list-disc list-inside mb-2">
+                        {project.results.map((r, i) => <li key={i}>{r}</li>)}
+                    </ul>
+                </div>
+            }
+
+            {project.github &&
                 <GithubButton github={project.github} />
             }
         </div>
