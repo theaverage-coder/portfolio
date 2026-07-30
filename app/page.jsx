@@ -9,7 +9,7 @@ export default function Home() {
   const skills = [
     {
       title: "LANGUAGES",
-      items: ["JavaScript", "Java", "Python"]
+      items: ["JavaScript", "Java", "Python", "C#"]
     },
     {
       title: "TECHNOLOGIES & LIBRARIES",
@@ -17,7 +17,7 @@ export default function Home() {
     },
     {
       title: "DATABASES",
-      items: ["MySQL", "MongoDB"]
+      items: ["MySQL", "PostGreSQL", "MongoDB"]
     },
     {
       title: "TOOLS & TECHNOLOGIES",
