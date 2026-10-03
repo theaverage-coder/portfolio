@@ -197,7 +197,7 @@ export default function Home() {
       <NavBar />
       <main className="flex flex-1 w-full  flex-col items-center justify-center py-12  bg-[#22223B]">
         <header className="flex flex-col text-center p-20  sm:py-16 md:py-20 md:h-[550px] justify-center items-center">
-          <h2 className="mb-10 uppercase font-light tracking-[0.2em] text-[#C9ADA7]"> FULL STACK & BACKEND DEVELOPER </h2>
+          <h2 className="mb-10 uppercase font-light tracking-[0.2em] text-[#C9ADA7]"> SOFTWARE DEVELOPER </h2>
           <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mb-4 leading-tight">Hi, I’m <span className="text-[#9A8C98]">Eesha.</span></h1>
           <p className="sm:text-lg md:text-2xl max-w-2xl"> This portfolio is a collection of projects that showcase my development process, technical skills, and problem-solving approach.</p>
         </header>
